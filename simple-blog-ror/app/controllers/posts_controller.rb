@@ -11,7 +11,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    byebug
     @post = Post.new(post_params)
     if @post.save
       flash[:notice] = "Successfully created post!"
